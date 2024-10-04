@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Blog</title>
+    
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+        color: #FFF;
+    }
+    #span{
+        color:#0c0401;
+        font-family: 'Dancing script'cursive;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2.5em;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFA500;
+        padding: 20px;
+        color: rgb(136, 5, 5);
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+        
+    }
+    
+    nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li{
+            margin-right: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color:black;
+        }
+        nav ul li a:hover{
+            color:yellow;
+        }
+
+    
+    .recipe {
+        background-color: #41506b;
+        padding: 50px 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .recipe .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .content {
+        max-width: 50%;
+    }
+    
+    .content h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .content p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: darkred;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: grey;
+    }
+    
+    .food-list {
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .food-list h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .recipe-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        background-color: rgba(2, 2, 2,0.9);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    
+    .card img{
+        width:100%;
+        height:auto;
+        border-radius:10px;
+    }
+    
+    .card h3 {
+        margin: 15px 0;
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+    
+    .card p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #FFA500;
+    }
+    
+    footer {
+        background-color: #FFA500;
+        color: black;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+        font-family:'Dancing script',cursive;
+        font-style: italic;
+        font-weight: 300;
+    }
+    @media(max-width: 768px){
+        .content h2{
+            font-size: 1.5rem;
+        }
+        .contact p{
+            font-size: 1rem;
+        }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+        footer p{
+            font-size: 0.8rem;
+        }
+    }
+    </style>
+
+    </head>
+
+<body>
+   <header>
+        <div class="A">
+            <h1>Delicious Recipes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bio.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="vidhi.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <section class="recipe">
+        <div class="container">
+            <div class="content">
+                <h2>Feature Recipe: Spaghetti Carbonara</h2>
+                <p>A classic Italian dish with a creamy, savory sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">Read More</a>
+            </div>
+            <div class="image">
+                <img src="https://bellyfull.net/wp-content/uploads/2023/02/Spaghetti-Carbonara-blog-1-500x375.jpg" alt="Spaghetti Carbonara">
+            </div>
+        </div>
+    </section>
+   
+    <section class="food-list">
+        <h2 id="span">Latest Recipes</h2>
+        <div class="recipe-cards">
+            <div class="card">
+                <img src="https://kickassbaker.com/wp-content/uploads/2022/04/self-rising-flour-pancake-recipe.jpg" alt="Pancakes">
+                <h3>Fluffy Pancakes</h3>
+                <p>These pancakes are light, fluffy, and easy to make!</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+            <div class="card">
+                <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/3-Step-Chicken-Salad.jpg" alt="Salad">
+                <h3>Fresh Garden Salad</h3>
+                <p>A healthy, refreshing salad with seasonal veggies.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/6d/ee/d4/6deed4ae31e386eb24e93a609b8ebddd.jpg" height="1.5rem"alt="chiken">
+                <h3>Juicy Chiken</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/20/33/89/2033899b443d1c4429843ea1794659af.jpg" height="1.5rem"alt="paneer">
+                <h3>Homemade Souce</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.recipetineats.com/tachyon/2023/11/One-pan-baked-butter-chicken_9.jpg?resize=500%2C500" height="1.5rem"alt="Souce">
+                <h3>Fish curry</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/55/dc/03/55dc03eeee255a7d5d1179186c288c45.jpg" height="1.5rem"alt="cake">
+                <h3>Cake</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/a7/bf/68/a7bf68a8976eb5a1f4294945de840850.jpg" height="1.5rem"alt="juice">
+                <h3>Lemon Juice</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/3c/2e/61/3c2e61c78ae7a6b133e120705e684355.jpg" height="1.5rem"alt="ice-cream">
+                <h3>Ice-Cream</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/c6/65/c7/c665c758a0b5d5a6a93db951d11124d1.jpg" height="1.5rem"alt="juicy-chiken">
+                <h3>Talu King</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/49/77/e0/4977e03f0fea93f0677a7bad21ff4acb.jpg" height="1.5rem"alt="pasta">
+                <h3>Tasty Pasta</h3>
+                <p>A delicious, juicy chiken with homemade sauce.</p>
+                <a href="http://127.0.0.1:5500/menu/Table.html/menu.page/recipe.html/vidhi.html" class="btn">View Recipe</a>
+            </div>
+        </div>
+    </section>
+   <footer>
+        <p>© 2024 Delicious Recipes. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>
